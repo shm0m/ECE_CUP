@@ -1,73 +1,71 @@
 # ECE Cup - Pi-Car Autonomous Robot
 
-## 🏆 Projet ECE Cup - Automatisation d'un Robot Pi-Car
+## 🏆 ECE Cup Project - Pi-Car Automation
 
-Ce projet a été réalisé dans le cadre de l'ECE Cup. L'objectif était d'automatiser un robot Pi-Car afin qu'il puisse naviguer de manière autonome en combinant plusieurs fonctionnalités : suivi de ligne, reconnaissance de formes et de couleurs via OpenCV, et détection d'obstacles grâce aux capteurs à ultrasons.
-
----
-
-## 🚀 Fonctionnalités
-
-### 🔹 Suivi de ligne
-- Utilisation d'une caméra pour détecter et suivre une ligne tracée sur le sol.
-- Traitement d'images avec OpenCV pour extraire les contours et ajuster la trajectoire du robot.
-
-### 🎨 Reconnaissance de formes et de couleurs
-- Détection de formes géométriques et de couleurs spécifiques via OpenCV.
-- Prise de décisions basées sur les objets détectés (exemple : changement de direction en fonction des couleurs ou formes rencontrées).
-
-### 📡 Communication et Exécution des Scripts
-- Connexion en SSH au Raspberry Pi du Pi-Car pour exécuter les scripts de contrôle.
-- Interface en Python permettant d'envoyer des commandes au robot en temps réel.
-
-### 🏁 Labyrinthe et évitement d'obstacles
-- Intégration de capteurs à ultrasons pour détecter les obstacles et ajuster la trajectoire.
-- Algorithme de navigation pour éviter les collisions et se déplacer efficacement à travers un labyrinthe.
+This project was carried out as part of the ECE Cup. The goal was to automate a Pi-Car robot so that it could navigate autonomously by combining several features: line following, shape and color recognition using OpenCV, and obstacle detection through ultrasonic sensors.
 
 ---
 
-## 🔧 Technologies et Matériel Utilisés
+## 🚀 Features
 
-- **Matériel :** Pi-Car (Robot sur base Raspberry Pi), caméra embarquée, capteurs à ultrasons.
-- **Logiciels & Frameworks :**
-  - OpenCV (Traitement d'images)
-  - Python (Contrôle et traitement des données)
-  - SSH (Communication et exécution des scripts)
-  - NumPy et SciPy (Traitement mathématique)
+### 🔹 Line Following
+- Use of an onboard camera to detect and follow a line on the ground.
+- Image processing with OpenCV to extract contours and adjust the robot's trajectory.
+
+### 🎨 Shape and Color Recognition
+- Detection of geometric shapes and specific colors using OpenCV.
+- Decision-making based on detected objects (e.g., changing direction according to encountered colors or shapes).
+
+### 📡 Communication and Script Execution
+- SSH connection to the Raspberry Pi of the Pi-Car to execute control scripts.
+- Python interface allowing real-time command sending to the robot.
+
+### 🏁 Maze Navigation and Obstacle Avoidance
+- Integration of ultrasonic sensors to detect obstacles and adjust trajectory.
+- Navigation algorithm to avoid collisions and efficiently move through a maze.
 
 ---
 
-## 🛠️ Installation et Exécution
+## 🔧 Technologies and Hardware Used
 
-### 📥 Prérequis
-- Un Raspberry Pi avec Raspbian installé
-- Python 3 et les bibliothèques suivantes :
+- **Hardware:** Pi-Car (Raspberry Pi-based robot), onboard camera, ultrasonic sensors.
+- **Software & Frameworks:**
+  - OpenCV (Image processing)
+  - Python (Control and data processing)
+  - SSH (Communication and script execution)
+  - NumPy and SciPy (Mathematical processing)
+
+---
+
+## 🛠️ Installation and Execution
+
+### 📥 Prerequisites
+- A Raspberry Pi with Raspbian installed
+- Python 3 and the following libraries:
   ```bash
   pip install opencv-python numpy scipy paramiko
   ```
-- Connexion SSH configurée pour exécuter des commandes à distance
+- Configured SSH connection to execute remote commands
 
-### 🚀 Exécution
-1. **Connexion SSH** :
+### 🚀 Execution
+1. **SSH Connection:**
    ```bash
-   ssh pi@adresse_ip_du_robot
+   ssh pi@robot_ip_address
    ```
-2. **Lancer le script principal** :
+2. **Run the main script:**
    ```bash
-   python main.py
+   sudo python3 soutenance.py
    ```
-3. Observer le robot analyser son environnement et se déplacer intelligemment 🚗💨
+3. Observe the robot analyze its environment and move intelligently 🚗💨
 
 ---
 
-## 📌 Améliorations Possibles
-- Optimisation des algorithmes de traitement d'image pour une reconnaissance plus rapide.
-- Ajout d'une interface graphique pour faciliter le contrôle du robot.
-- Implémentation d'une intelligence artificielle pour améliorer la navigation dans le labyrinthe.
+## 📌 Possible Improvements
+- Optimization of image processing algorithms for faster recognition.
+- Addition of a graphical interface to facilitate robot control.
+- Implementation of artificial intelligence to enhance maze navigation.
 
 ---
 
-## 👥 Auteurs
+## 👥 Authors
 - **Shaima Derouich** & Team 🎯
-
-Si tu as des questions ou suggestions, n'hésite pas à contribuer ou à me contacter ! 🚀
